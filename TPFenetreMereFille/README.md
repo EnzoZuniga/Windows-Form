@@ -40,11 +40,15 @@ public partial class FMere : Form
 }
 ```
 ![FilleNew.png](http://image.noelshack.com/fichiers/2018/42/5/1539939823-fillenew.png)
+
 2. Le nouton "close" ferme la fenêtre préalablement séléctionnée dans la ListBox et l'efface de celle-ci(Même de la mémoire).
 3. La ListBox liste les fenêtres "fille" instanciées.
+
 4. Le bouton "show", ouvre et affiche la fenêtre "fille" selectionnée dans la ListBox.
+
 ![FilleMere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939856-fillemere.png)
 
 5. Le bouton "hide" cache la fenêtre "fille" selectionnées dans la ListBox.
+
 6. Le bouton "show dialog" ouvre une fenêtre "fille" selectionnée dans la ListBox en tant que "show dialog".
 
