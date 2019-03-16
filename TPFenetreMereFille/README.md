@@ -1,22 +1,21 @@
 ## Windows-Form ##
 ### TP: Fenêtre Mère/Fille ###
 
-Le but du Tp est de gérer deux fenêtres dans une même application et de découvrir la gestion de deux fenêtres qui communiquent entre elles au moyen de méthodes, d'accesseurs et d'évènements.
+Le but du TP est de gérer deux fenêtres dans une même application et de découvrir la gestion de deux fenêtres qui communiquent entre elles au moyen de méthodes, d'accesseurs et d'évènements.
 
 Les outils mis en oeuvre:
-* Git
 * Visual Studio
 * C#
 * Windows Form
 
-Dans un premier temps, il fut nécessaire de créer la fenêtre Mère.
+Nous avons tout d'abord créé la fenêtre "mère".
 Celle-ci est entre autre la fenêtre par défaut générer par la solution Windows Form.
 Ainsi, afin de ne pas la laisser vide, nous avons fait le choix d'ajouter différentes fonctionnalités:
 
 ![Mere.png](http://image.noelshack.com/fichiers/2018/42/5/1539939751-mere.png)
 
-1. Bouton New: Instancie une nouvelle fenêtre et l'ajouter à la List Box.
-La mère ayant de nombreuses Filles, celles-ci seront stockées dans un objet de type ArrayList géré par la fenêtre mère:
+1. Le bouton "New" instancie une nouvelle fenêtre et l'ajoute à la ListBox.
+La mère ayant de nombreuses Filles, celles-ci seront stockées dans une ArrayList géré par la fenêtre mère:
 ```cs
 public partial class FMere : Form
 {
@@ -41,11 +40,11 @@ public partial class FMere : Form
 }
 ```
   
-2. Bouton Close: Ferme la fenêtre préalablement séléctionnée dans la List Box et l'efface de la List Box (Elle n'existe plus en mémoire).
-3. List Box: Liste les fenêtres Fille instanciées.
-4. Bouton Show: Ouvre, affiche la fenêtre Fille selectionnée dans la List Box.
-5. Bouton Hide: Cache la fenêtre fille selectionnées dans la List Box.
-6. Bouton Show Dialog: Ouvre une fenêtre fille selectionnée dans la List Box en tant que Show Dialog.
+2. Le nouton "close" ferme la fenêtre préalablement séléctionnée dans la ListBox et l'efface de celle-ci(Même de la mémoire).
+3. La ListBox liste les fenêtres "fille" instanciées.
+4. Le bouton "show", ouvre et affiche la fenêtre "fille" selectionnée dans la ListBox.
+5. Le bouton "hide" cache la fenêtre "fille" selectionnées dans la ListBox.
+6. Le bouton "show dialog" ouvre une fenêtre "fille" selectionnée dans la ListBox en tant que "show dialog".
 
 ![FilleNew.png](http://image.noelshack.com/fichiers/2018/42/5/1539939823-fillenew.png)
 
